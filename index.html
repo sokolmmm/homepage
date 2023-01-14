@@ -5,135 +5,336 @@
     <title>Résumé</title>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
+    <main class="l-main bd-container">
       <div class="resume">
-        <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Bulka</h1>
-            <h3 class="contact-info__sub-header">Senior Hooman Manager</h3>
-
-            <div class="contact_info_container fh">
-              <div class="contact-info__block"></div>
-
-              <div class="contact-info__block contact-info__block--center">
-                <img class="contact-info__avatar" src="assets/avatar.png" alt="Avatar" />
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img src="./assets/avatar.png" alt="avatar" class="home__img" />
+                <h1 class="home__title">Михайло Сокол</h1>
+                <h3 class="home__profession">Веб розробник (початківець)</h3>
               </div>
 
-              <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 384 512"
-                    >
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Lviv, Ukraine</span>
-                </a>
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> вул. Чорновола 53, м. Рівне, Україна
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  sokol.m.misha@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> +380 98 112 17 09
+                </span>
+              </div>
+            </div>
+          </section>
 
-                <a
-                  href="https://ua.linkedin.com/company/binary-studio_241166"
-                  rel="author"
-                  class="contact-info__item"
-                >
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg
-                      class="contact-info__item-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>binary-studio</span>
-                </a>
-              </div>
+          <!--========== SOCIAL ==========-->
+          <section class="social section" id="social">
+            <h2 class="section-title">СОЦМЕРЕЖІ</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.facebook.com/profile.php?id=100039511129904"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-facebook-square social__icon"></i>@Misha Sokol
+              </a>
+              <a
+                href="https://www.instagram.com/misha___sokol/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i>@misha___sokol
+              </a>
+              <a href="" target="_blank" class="social__link">
+                <i class="bx bxl-telegram social__icon"></i>@sokol_misha
+              </a>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
-                  </path>
-                </svg>
-              </div>
-              <p class="intro_text">Meow.
-                I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil, 
-                all I do is sleep and try to help out hoomans with their projects whenever 
-                they need me.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-                <p class="skills__text">Sleep, eat, more sleep, meow, mrrr, purr. </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="resume__block">
-            <div class="main-info fh">
-              <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
-                  <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability">For whole my life</span>
-                    <h3 class="experiences__company-header-name">BinaryStudio</h3>
-                  </div>
-                  
-                  <div class="experiences__company-project">
-                    <span class="experiences__company-project-role">Binary Studio Cat</span>
-                    <h3 class="experiences__company-project-name">Hooman project</h3>
-                    <ul class="experiences__company-project-responsibilities">
-                      <li>Supported hoomans</li>
-                      <li>Slept all the time</li>
-                      <li>Lied on the keyboard</li>
-                      <li>Watched my hoomans working</li>
-                    </ul>
-                  </div>
+          </section>
+
+          <!--========== Intro ==========-->
+          <section class="intro section" id="intro">
+            <h2 class="section-title">Вступ</h2>
+
+            <p class="intro__description">
+              Привіт! Завжди захоплювався програмуванням, проте обрав професію
+              інженера-проектувальника. Зараз зрозумів, що настав час робити те, що любиш! Прикладу
+              максимум зусиль, щоб пройти відбір і з допомогою Binary Studio Academy прийти до мети!
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Освіта</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">ІНЖЕНЕР-КОНСТРУКТОР</h3>
+                  <span class="education__degree">Магістр</span>
+                  <span class="education__studies">НУВГП</span>
+                  <span class="education__year">2014-2019</span>
                 </div>
               </div>
-              <div class="additional-info fv">
-                <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
-                  <div class="additional-info__education-university">
-                    <span class="additional-info__education-university-durability">2021</span>
-                    <h3 class="additional-info__education-university-speciality">Cat track</h3>
-                    <p class="additional-info__education-university-name">Binary Studio Academy</p>
-                  </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
                 </div>
-              
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
-                  <p class="additional-info__languages-item">
-                    Meow dialect
-                  </p>
-                  <p class="additional-info__languages-item">
-                    Ukrainian (understand)
-                  </p>
-                  <p class="additional-info__languages-item">
-                    English (don't understand)
-                  </p>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">АРХІТЕКТОР</h3>
+                  <span class="education__degree">Магістр</span>
+                  <span class="education__studies">НУВГП</span>
+                  <span class="education__year">2019-2020</span>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Навички</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name"><span class="skills__circle"></span>Html</li>
+                <li class="skills__name"><span class="skills__circle"></span>Css</li>
+                <li class="skills__name"><span class="skills__circle"></span>Sass</li>
+              </ul>
+              <ul class="skills__data">
+                <li class="skills__name"><span class="skills__circle"></span>JavaScript</li>
+                <li class="skills__name"><span class="skills__circle"></span>React</li>
+              </ul>
+            </div>
+          </section>
         </div>
+
+        <div class="resume__right">
+          <!--========== Timeline ==========-->
+          <section class="timeline section" id="timeline">
+            <h2 class="section-title">Timeline</h2>
+
+            <div class="timeline__container bd-grid">
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                  <span class="timeline__line"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">Binary Studio Academy</h3>
+                  <span class="timeline__company">10 січня 2023</span>
+                  <p class="timeline__description">
+                    Успішна здача тесту Binary Studio Academy, а значить, чудова можливість стати
+                    WEB-розробником!
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                  <span class="timeline__line"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">Зміна професії</h3>
+                  <span class="timeline__company">червень 2022</span>
+                  <p class="timeline__description">
+                    Через повномасштабне вторгнення російської федерації в Україну був змушений
+                    змінювати професію. Зробив вибір на користь WEB-розробника та почав вивчати
+                    основи.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                  <span class="timeline__line"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">Робота</h3>
+                  <span class="timeline__company">липень 2020 - 24 лютого 2022</span>
+                  <p class="timeline__description">
+                    Отримав пропозицію про працевлаштування в "РівнеПроект" на позицію
+                    інженера-проектувальника автомобільних доріг. Втілив в життя близько 20 проектів
+                    капітального ремонту/реконструкції вулиць населених пунктів (в кращих традиціях
+                    європейського урбанізму).
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                  <span class="timeline__line"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">Студентські роки</h3>
+                  <span class="timeline__company">2014-2020</span>
+                  <p class="timeline__description">
+                    Навчався в Рівненському національному університеті водного господарства та
+                    природокористування, де здобув освіту за спеціальності "Будівництво та цивільна
+                    інженерія"
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                  <span class="timeline__line"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">Шкільні роки</h3>
+                  <span class="timeline__company">2002-2013</span>
+                  <p class="timeline__description">
+                    Навчався, грав з друзями, займався футболом, їздив до бабусі на канікули.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__content">
+                <div class="timeline__time">
+                  <span class="timeline__rounder"></span>
+                </div>
+
+                <div class="timeline__data bd-grid">
+                  <h3 class="timeline__title">День мого народження</h3>
+                  <span class="timeline__company">21 листопада 1997</span>
+                  <p class="timeline__description">Початок шляху.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section" id="languages">
+            <h2 class="section-title">Мови</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Українська: носій
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span>Англійська: A2
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Захоплення</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-football interests__icon"></i>
+                <span class="interests__name">Футбол</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Музика</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bxs-plane-alt interests__icon"></i>
+                <span class="interests__name">Подорожі</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i>
+                <span class="interests__name">Читання</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
+
+    <footer class="l-footer" id="footer">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Сокол</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="bx bx-home nav__icon"></i>
+                Домашня
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#intro" class="nav__link">
+                <i class="bx bx-user nav__icon"> </i>
+                Вступ
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Освіта
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Навички
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#timeline" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>Timeline
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#languages" class="nav__link"> <i class="bx bx-world nav__icon"></i>Мови </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </footer>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+    </a>
+
+    <script src="index.js"></script>
   </body>
 </html>
